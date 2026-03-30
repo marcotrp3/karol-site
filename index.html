@@ -264,7 +264,7 @@
 
     async function carregarAvaliacoes() {
         try {
-            const resposta = await fetch('http://localhost:3000/api/avaliacoes');
+            const resposta = await fetch('https://karol-site.onrender.com/api/avaliacoes');
             const data = await resposta.json();
 
             document.getElementById('nota-google').textContent = data.nota ? data.nota.toFixed(1) : '0.0';
